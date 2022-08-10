@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(0, 0, 48);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: white;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    background-color:  rgb(0, 0, 28);
+}
+
+main {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+.titulo {
+    font-size: 70px;
+    color: rgb(204, 171, 7);
+    font-family: 'Press Start 2P';
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.boton {
+    border-radius: 40px;
+    border: 6px solid white;
+    background-color: rgb(36, 28, 92);
+    width: 250px;
+    height: 250px;
+}
+
+.boton:hover {
+    background-color: rgb(109, 105, 142);
+}
+
+.boton:active {
+    background-color: rgb(163, 128, 1);
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ppt {
+    font-size: 150px;
+    margin-bottom: 20px;
+}
+
+.marcador {
+    margin-bottom: 40px;
+}
+
+.info-puntos{
+    font-size: 50px;
+    margin: 20px
+}
+
+.mensaje-puntos {
+    font-size: 35px;
+    margin: 20px
+}
+
+.resultados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.resultado {
+    width: 170px;
+}
+
+.opcion {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.puntos {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(36, 28, 92);
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+  .modal-titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+  
+  .boton-modal {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgb(140, 0, 58);
+    border: 4px solid white;
+    border-radius: 30px;
+}
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+  
+  .overlay.active {
+    display: block;
+}  
+
+@media (max-width: 550px) {
+    .titulo {
+      font-size: 18px;
+    }
+  
+    .info-puntos {
+      font-size: 26px;
+    }
+
+    .ppt {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+  
+    .botones {
+      gap: 30px;
+    }
+  
+    .boton {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .opcion {
+      font-size: 50px;
+    }
+}

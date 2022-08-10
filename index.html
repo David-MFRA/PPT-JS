@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Piedra Papel Tijera</title>
+    <link rel="stylesheet" href="style.css">  
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/19e91fe869.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="icono.png" type="image/gif">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo"> PIEDRA PAPEL TIJERA</h1>
+        </header>
+
+        <main>
+            <div class="marcador">
+                <h2 class="info-puntos" id="infoPuntos">Escoge (✊ | ✋ | ✌)</h2>
+                <h3 class="mensaje-puntos" id="mensajePuntos">¡El mejor de 5 gana!</h3>
+                <div class="resultados">
+                    <div class="resultado">
+                        <div class="opcion" id="simboloJugador">?</div>
+                        <p class="puntos" id="puntosJugador">Jugador: 0</p>
+                    </div>
+                    <div class="resultado">
+                        <div class="opcion" id="simboloMaquina">?</div>
+                        <p class="puntos" id="puntosMaquina">Máquina: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botones">
+                <button class="boton" id="piedra">
+                    <div class="ppt">✊</div>
+                </button>
+                <button class="boton" id="papel">
+                    <div class="ppt">✋</div>
+                </button>
+                <button class="boton" id="tijera">
+                    <div class="ppt">✌</div>
+                </button>
+            </div>
+        </main>    
+
+        <div class="modal" id="finJuego">
+            <p class="modal-titulo" id="mensajeFin"></p>
+            <button class="boton-modal" id="botonReiniciar"><div>Jugar otra vez</div></button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
